@@ -1,0 +1,80 @@
+.wrapper {
+    position: relative;
+    display: flex;
+}
+
+div.header {
+    font-weight: bold;
+}
+
+/* header fixo */
+div.cell:nth-child(1) {
+    width: 10%;
+    position: absolute;
+    left: 0;
+    top: auto;
+}
+
+div.cell:nth-child(2) {
+    width: 65%;
+    position: absolute;
+    left: 10%;
+    top: auto;
+}
+
+div.cell:nth-child(3) {
+    width: 25%;
+    position: absolute;
+    right: 0;
+    top: auto;
+}
+
+div.header .linha, div.footer .linha {
+    background-color: lightblue;
+}
+
+.body-scroller {
+    overflow: auto;
+}
+
+.linha {
+    width: 100%;
+    display: flex;
+    background-color: #FFF;
+}
+
+.coluna, .coluna-plano, .coluna-cell-sides {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+div.linha:nth-child(even) {
+    background-color: azure;
+}
+
+div.coluna {
+    min-width: 150px;
+    display: flex;
+}
+
+div.coluna-plano {
+    width: 100%;
+}
+
+.valor {
+    min-width: 50px;
+}
+
+/* hover testes */
+div.header div.coluna:hover {
+    background-color: green;
+}
+
+div.tabela:hover {
+    background-color: magenta;
+}
+
+div.body div.linha:hover {
+    background-color: #ff0000;
+}
